@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: 'ExpletusSans';
+}
+
+@font-face {
+    font-family: 'ExpletusSans';
+    src: url(../fonts/expletus_sans/static/ExpletusSans-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#contenedor_principal {
+    background-color: #000000;
+}
+
+#col_tienda{
+    margin-top: 2rem;
+}
+
+#inicio{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#iniciar{
+    background-color: #343434;
+    height: 50px;
+    width: 100px;
+}
+
+#contenedor_principal {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#contenedor_principal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #00000000, #00000017, #00000041, rgba(0, 0, 0, 0.74), rgb(0, 0, 0));
+
+    z-index: -1;
+}
+
+#texto_menu {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+button {
+    margin-top: 2rem;
+}
+#fila_menu{
+    margin-bottom: 8rem;
+}
+#contenedor_registro{
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+#texto_registro{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#nombre_usuario{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#contrasenha{
+    margin: auto;
+}
+
+.form-control{
+    text-align: center;
+    width: 400px;
+    height: 50px;
+}
+
+#enviar{
+    margin-bottom: 6rem;
+}
+
+#footer{
+    
+    background-color: #484848;
+    margin-top: 11rem;
+}
+#footer .col{
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#footer .col a{
+    text-decoration: none;
+    color: white;
+}

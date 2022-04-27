@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    font-family: 'ExpletusSans';
+}
+
+@font-face {
+    font-family: 'ExpletusSans';
+    src: url(../fonts/expletus_sans/static/ExpletusSans-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#contenedor_principal {
+    background-color: #000000;
+}
+#col_tienda{
+    margin-top: 2rem;
+}
+#inicio{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#iniciar{
+    background-color: #343434;
+    height: 50px;
+    width: 100px;
+}
+#fila_imagenes {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#fila_imagenes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #00000000, #00000017, #00000041, rgba(0, 0, 0, 0.74), rgb(0, 0, 0));
+
+    z-index: -1;
+}
+#texto_menu {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+h1 {
+    color: white;
+    font-size: 60px;
+}
+button {
+    margin-top: 2rem;
+}
