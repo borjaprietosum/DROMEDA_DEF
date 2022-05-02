@@ -30,12 +30,12 @@
             </div>
             <div class="row" id="fila_formulario">
                 <div class="col">
-                    <form id="register">
-                        <input class="form-control" type="text" placeholder="Email" id="email" required>
-                        <input class="form-control" type="text" placeholder="Nombre de usuario" id="nombre_usuario" required>
-                        <input class="form-control" type="password" placeholder="Contraseña" id="contrasenha" required>
-                        <input class="form-control" type="password" placeholder="Repetir Contraseña" id="rep_contrasenha" required>
-                        <button type="button" class="btn" id="enviar"><b>Enviar</b></button>
+                    <form action="registro.php" method="POST" id="register">
+                        <input class="form-control" type="text" placeholder="Email" name="email" id="email" required>
+                        <input class="form-control" type="text" placeholder="Nombre de usuario" name="nombre_usuario" id="nombre_usuario" required>
+                        <input class="form-control" type="password" placeholder="Contraseña" name="contrasenha" id="contrasenha" required>
+                        <input class="form-control" type="password" placeholder="Repetir Contraseña" name="rep_contrasenha" id="rep_contrasenha" required>
+                        <button type="submit" class="btn" id="enviar"><b>Enviar</b></button>
                     </form>
                 </div>
             </div>
